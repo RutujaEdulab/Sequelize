@@ -58,7 +58,7 @@ var deletestu=async(req,resp)=>{
   resp.status(200).json({data:data});
 }
 
-//To Upadate data from database.
+//To Update data from database.
  var putstu=async(req,resp)=>{
   var updatedata=req.body;
   const data=await Student.update(updatedata,{
